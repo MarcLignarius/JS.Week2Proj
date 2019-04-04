@@ -9,16 +9,16 @@ $(function() {
     var project = parseInt($("input:radio[name=project]:checked").val());
     var topReason = parseInt($("input:radio[name=topreason]:checked").val());
     if (city === 1 && companySize === 1 && team === 1 && project === 1 && topReason === 1) {
-      $("#noresult", "#result2", "#result3").hide();
+      $("#survey").hide();
       $("#result1").show();
     } else if (city === 2 && companySize === 2 && team === 2 && project === 2 && topReason === 2) {
-      $("#noresult", "#result1", "#result3").hide();
+      $("#survey").hide();
       $("#result2").show();
     } else if (city === 3 && companySize === 3 && team === 3 && project === 3 && topReason === 3) {
-      $("#noresult", "#result1", "#result2").hide();
+      $("#survey").hide();
       $("#result3").show();
     } else {
-      $("#result1", "#result2", "#result3").hide();
+      $("#survey").hide();
       $("#noresult").show();
     }
     event.preventDefault();
