@@ -3,9 +3,9 @@ $(".username").text(userName);
 
 $(function() {
   $("form#survey").submit(function(event){
-		var city = parseInt($("input:radio[name=city]:checked").val());
+	  var city = parseInt($("input:radio[name=city]:checked").val());
     var companySize = parseInt($("input:radio[name=companysize]:checked").val());
-		var team = parseInt($("input:radio[name=team]:checked").val());
+	  var team = parseInt($("input:radio[name=team]:checked").val());
     var project = parseInt($("input:radio[name=project]:checked").val());
     var topReason = parseInt($("input:radio[name=topreason]:checked").val());
     if (city === 1 && companySize === 1 && team === 1 && project === 1 && topReason === 1) {
